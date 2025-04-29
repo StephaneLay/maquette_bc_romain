@@ -2,7 +2,7 @@
 :root{
     --main-text-color: #4d4d4d;
     --orange-color : #ff8c42;
-    --grey-bg-color : #f6f7f9;
+    --grey-bg-color : #ece8e8;
     --white-bg : #ffffff;
     font-size: 16px;
 }
@@ -154,4 +154,136 @@ header li{
     background-position:center;
     background-size:cover;
     border-radius: 20px;
+}
+
+#planifiez{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+#planifiez h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#planifiez p{
+    text-align: center;
+    width: 25%;
+    margin-bottom: 1.5rem;
+}
+
+#card{
+    background-color: var(--white-bg);
+    display: flex;
+    width: 60%;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 5px 5px rgba(100, 100, 100, 0.692);
+    padding: 1.5rem;
+}
+
+#select{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+#select .cardselect:nth-child(2) {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;;
+}
+
+.cardselect{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardselect select{
+    font-size: .7em;
+    margin-top: 1.5rem;
+    width: 10rem;
+    border: none;
+}
+
+
+
+#card a{
+    color: white;
+    padding: 1rem;
+    background-color: var(--orange-color);
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+#activites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#activites h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#activites p{
+    width: 25%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#catalogue{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttoncontainer{
+    display: flex;
+    
+}
+
+.activites-filterbutton{
+    width: 33%;
+    height: 4rem;
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.activites-filterbutton:focus{
+    color: var(--orange-color);
+    border-bottom:3px solid var(--orange-color) ;
+}
+
+.card{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+
+}
+
+#card-img{
+    background-image: url(assets/img_activity.avif);
+    background-position:center;
+    background-size:contain;
+    height: 5rem;
 }
