@@ -277,13 +277,20 @@ header li{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 5rem;
+    height: 30rem;
+    width: 20%;
+    border-radius: 20px;
 
 }
 
 #card-img{
     background-image: url(assets/img_activity.avif);
     background-position:center;
-    background-size:contain;
-    height: 5rem;
+    background-size:cover;
+    height: 60%;
+}
+
+#card-description *{
+    background-color: var(--orange-color);
+    color: white;
 }
