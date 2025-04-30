@@ -257,6 +257,7 @@ header li{
 
 #buttoncontainer{
     display: flex;
+    margin-bottom: 2rem;
     
 }
 
@@ -273,24 +274,139 @@ header li{
     border-bottom:3px solid var(--orange-color) ;
 }
 
+#cardcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: center;
+}
+
 .card{
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     height: 30rem;
-    width: 20%;
-    border-radius: 20px;
-
+    width: 22.4%;
+    margin-right: 2rem;
 }
 
 #card-img{
-    background-image: url(assets/img_activity.avif);
+    background-image: url(assets/img_homepage.jpg);
     background-position:center;
     background-size:cover;
     height: 60%;
+    border-radius: 20px 20px 0 0;
+}
+
+#card-description{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--orange-color);
+    padding: 1rem;
+    border-radius: 5px;
+    
 }
 
 #card-description *{
-    background-color: var(--orange-color);
     color: white;
+}
+
+#card-description p{
+    margin: 0;
+}
+
+   
+#card-description button{
+    color: var(--orange-color);
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+}
+
+#card-description div:first-child{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    
+    
+}
+
+#card-description div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#activites a:last-of-type{
+    color: rgb(123, 123, 197);
+    text-decoration: none;
+    font-size: .8em;
+}
+
+#avis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#avis h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#avis > p {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: #bdb8b8;
+    border-radius: 40px;
+}
+
+.aviscard{
+    border: 1px solid var(--orange-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.aviscard *{
+    color: rgb(132, 132, 228);
+}
+
+.avislabel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avislabel>div{
+    display: flex;
+}
+
+.useravis{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.useravis h3{
+    font-size: 1.2em;
+}
+
+.useravis hgroup{
+    font-size: .8em;
+    font-weight: 400;
 }
