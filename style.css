@@ -352,7 +352,7 @@ header li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 #avis h2{
@@ -367,6 +367,13 @@ header li{
     margin-bottom: 1.5rem;
 }
 
+#aviscard-container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 1rem;
+}
+
 .circle{
     width: 2rem;
     height: 2rem;
@@ -379,7 +386,7 @@ header li{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
 }
 
 .aviscard *{
@@ -390,10 +397,19 @@ header li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .avislabel>div{
+    width: 60%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aviscard > p{
+    padding: 1.5rem;
+    line-height: 1.5em;
 }
 
 .useravis{
@@ -410,3 +426,95 @@ header li{
     font-size: .8em;
     font-weight: 400;
 }
+
+.footer {
+    background-color: #444;
+    color: white;
+    padding: 2rem 3rem;
+  }
+
+  .footer *{
+    color: white;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-column {
+    min-width: 20rem;
+    margin: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .vision {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: .5rem;
+    height : 1rem
+  }
+  
+  .footer-column h3 {
+    font-size: 1em;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column p {
+    font-size: .8em;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  
+  .footer-column input[type="email"] {
+    width: 100%;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+    border: none;
+    font-size: .8em;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: .5rem 0;
+    
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    
+  }
+  
+  .footer-bottom {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: .9em;
+    
+  }
+  
+  .footer-bottom a {
+    margin-left: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+  }
